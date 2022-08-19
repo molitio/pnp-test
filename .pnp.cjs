@@ -17,7 +17,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     ],\
     "dependencyTreeRoots": [\
       {\
-        "name": "@pnp-test/base",\
+        "name": "pnp-test",\
         "reference": "workspace:."\
       },\
       {\
@@ -32,9 +32,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     "enableTopLevelFallback": true,\
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
-      ["@pnp-test/base", ["workspace:."]],\
       ["@pnp-test/consumer-library", ["workspace:packages/consumer-library"]],\
-      ["@pnp-test/module-library", ["workspace:packages/module-library"]]\
+      ["@pnp-test/module-library", ["workspace:packages/module-library"]],\
+      ["pnp-test", ["workspace:."]]\
     ],\
     "fallbackPool": [\
     ],\
@@ -43,7 +43,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
-            ["@rollup/plugin-typescript", "virtual:0be5059490b99f306b47a15025c7136dcf9f6c39572f9c82f50c45d44b751c34f142c0d0e09fd4a2fdfc10b38566af9fa80ff4d9bc54317516a60b25d80827b9#npm:8.3.4"],\
+            ["@rollup/plugin-typescript", "virtual:869c448e58eefcf7c8e16599aaa4b235df2538feb268834b94b349354880e6449e4b4bcc6d55b3e1680e23909c6848489cfe363d1e6f9af2e2051ca790695b85#npm:8.3.4"],\
             ["rollup", "npm:2.78.1"],\
             ["tslib", "npm:2.4.0"],\
             ["typescript", "patch:typescript@npm%3A4.7.4#~builtin<compat/typescript>::version=4.7.4&hash=f456af"]\
@@ -82,19 +82,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
-      ["@pnp-test/base", [\
-        ["workspace:.", {\
-          "packageLocation": "./",\
-          "packageDependencies": [\
-            ["@pnp-test/base", "workspace:."],\
-            ["@rollup/plugin-typescript", "virtual:0be5059490b99f306b47a15025c7136dcf9f6c39572f9c82f50c45d44b751c34f142c0d0e09fd4a2fdfc10b38566af9fa80ff4d9bc54317516a60b25d80827b9#npm:8.3.4"],\
-            ["rollup", "npm:2.78.1"],\
-            ["tslib", "npm:2.4.0"],\
-            ["typescript", "patch:typescript@npm%3A4.7.4#~builtin<compat/typescript>::version=4.7.4&hash=f456af"]\
-          ],\
-          "linkType": "SOFT"\
-        }]\
-      ]],\
       ["@pnp-test/consumer-library", [\
         ["workspace:packages/consumer-library", {\
           "packageLocation": "./packages/consumer-library/",\
@@ -126,11 +113,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:0be5059490b99f306b47a15025c7136dcf9f6c39572f9c82f50c45d44b751c34f142c0d0e09fd4a2fdfc10b38566af9fa80ff4d9bc54317516a60b25d80827b9#npm:8.3.4", {\
-          "packageLocation": "./.yarn/__virtual__/@rollup-plugin-typescript-virtual-a3587ed4e7/0/cache/@rollup-plugin-typescript-npm-8.3.4-47604dbf60-3a86664a1c.zip/node_modules/@rollup/plugin-typescript/",\
+        ["virtual:869c448e58eefcf7c8e16599aaa4b235df2538feb268834b94b349354880e6449e4b4bcc6d55b3e1680e23909c6848489cfe363d1e6f9af2e2051ca790695b85#npm:8.3.4", {\
+          "packageLocation": "./.yarn/__virtual__/@rollup-plugin-typescript-virtual-c91913dd15/0/cache/@rollup-plugin-typescript-npm-8.3.4-47604dbf60-3a86664a1c.zip/node_modules/@rollup/plugin-typescript/",\
           "packageDependencies": [\
-            ["@rollup/plugin-typescript", "virtual:0be5059490b99f306b47a15025c7136dcf9f6c39572f9c82f50c45d44b751c34f142c0d0e09fd4a2fdfc10b38566af9fa80ff4d9bc54317516a60b25d80827b9#npm:8.3.4"],\
-            ["@rollup/pluginutils", "virtual:a3587ed4e71b0f7c6a1a4468d433b22911127cfa503fa99582e13d18cc68a4eabbb4500b0676a4271a1db86e72664d2c3861cecd48824b513a299d3b7192c6d2#npm:3.1.0"],\
+            ["@rollup/plugin-typescript", "virtual:869c448e58eefcf7c8e16599aaa4b235df2538feb268834b94b349354880e6449e4b4bcc6d55b3e1680e23909c6848489cfe363d1e6f9af2e2051ca790695b85#npm:8.3.4"],\
+            ["@rollup/pluginutils", "virtual:c91913dd15043281a5c987cd43f74c1cabd9eeed234227e0871a32dbf0bad11af8ff32dc0dce7470d197dda2d9ff9d053856ef12e24b2e902aa8678efb23d611#npm:3.1.0"],\
             ["@types/rollup", null],\
             ["@types/tslib", null],\
             ["@types/typescript", null],\
@@ -158,10 +145,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:a3587ed4e71b0f7c6a1a4468d433b22911127cfa503fa99582e13d18cc68a4eabbb4500b0676a4271a1db86e72664d2c3861cecd48824b513a299d3b7192c6d2#npm:3.1.0", {\
-          "packageLocation": "./.yarn/__virtual__/@rollup-pluginutils-virtual-e850aa87ec/0/cache/@rollup-pluginutils-npm-3.1.0-b44b222e7d-8be16e2786.zip/node_modules/@rollup/pluginutils/",\
+        ["virtual:c91913dd15043281a5c987cd43f74c1cabd9eeed234227e0871a32dbf0bad11af8ff32dc0dce7470d197dda2d9ff9d053856ef12e24b2e902aa8678efb23d611#npm:3.1.0", {\
+          "packageLocation": "./.yarn/__virtual__/@rollup-pluginutils-virtual-23489d5c0d/0/cache/@rollup-pluginutils-npm-3.1.0-b44b222e7d-8be16e2786.zip/node_modules/@rollup/pluginutils/",\
           "packageDependencies": [\
-            ["@rollup/pluginutils", "virtual:a3587ed4e71b0f7c6a1a4468d433b22911127cfa503fa99582e13d18cc68a4eabbb4500b0676a4271a1db86e72664d2c3861cecd48824b513a299d3b7192c6d2#npm:3.1.0"],\
+            ["@rollup/pluginutils", "virtual:c91913dd15043281a5c987cd43f74c1cabd9eeed234227e0871a32dbf0bad11af8ff32dc0dce7470d197dda2d9ff9d053856ef12e24b2e902aa8678efb23d611#npm:3.1.0"],\
             ["@types/estree", "npm:0.0.39"],\
             ["@types/rollup", null],\
             ["estree-walker", "npm:1.0.1"],\
@@ -970,6 +957,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["picomatch", "npm:2.3.1"]\
           ],\
           "linkType": "HARD"\
+        }]\
+      ]],\
+      ["pnp-test", [\
+        ["workspace:.", {\
+          "packageLocation": "./",\
+          "packageDependencies": [\
+            ["pnp-test", "workspace:."],\
+            ["@rollup/plugin-typescript", "virtual:869c448e58eefcf7c8e16599aaa4b235df2538feb268834b94b349354880e6449e4b4bcc6d55b3e1680e23909c6848489cfe363d1e6f9af2e2051ca790695b85#npm:8.3.4"],\
+            ["rollup", "npm:2.78.1"],\
+            ["tslib", "npm:2.4.0"],\
+            ["typescript", "patch:typescript@npm%3A4.7.4#~builtin<compat/typescript>::version=4.7.4&hash=f456af"]\
+          ],\
+          "linkType": "SOFT"\
         }]\
       ]],\
       ["promise-inflight", [\

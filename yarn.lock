@@ -32,17 +32,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@pnp-test/base@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "@pnp-test/base@workspace:."
-  dependencies:
-    "@rollup/plugin-typescript": ^8.3.4
-    rollup: ^2.78.1
-    tslib: ^2.4.0
-    typescript: ^4.7.4
-  languageName: unknown
-  linkType: soft
-
 "@pnp-test/consumer-library@workspace:packages/consumer-library":
   version: 0.0.0-use.local
   resolution: "@pnp-test/consumer-library@workspace:packages/consumer-library"
@@ -794,6 +783,17 @@ __metadata:
   checksum: 050c865ce81119c4822c45d3c84f1ced46f93a0126febae20737bd05ca20589c564d6e9226977df859ed5e03dc73f02584a2b0faad36e896936238238b0446cf
   languageName: node
   linkType: hard
+
+"pnp-test@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "pnp-test@workspace:."
+  dependencies:
+    "@rollup/plugin-typescript": ^8.3.4
+    rollup: ^2.78.1
+    tslib: ^2.4.0
+    typescript: ^4.7.4
+  languageName: unknown
+  linkType: soft
 
 "promise-inflight@npm:^1.0.1":
   version: 1.0.1
