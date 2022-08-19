@@ -2,14 +2,14 @@
   "name": "pnp-test",
   "version": "1.0.0",
   "description": "test",
-  "main": "index.js",
   "license": "MIT",
   "private": true,
   "workspaces": [
     "packages/*"
   ],
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "tsc": "tsc --traceResolution"
   },
   "devDependencies": {
     "@rollup/plugin-typescript": "^8.3.4",
