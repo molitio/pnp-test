@@ -1,0 +1,11 @@
+{
+  "name": "@pnp-test/consumer-library",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "license": "MIT",
+  "devDependencies": {
+    "@pnp-test/module-library": "workspace:*",
+    "@types/node": "^18.7.6",
+    "typescript": "^4.7.4"
+  }
+}
